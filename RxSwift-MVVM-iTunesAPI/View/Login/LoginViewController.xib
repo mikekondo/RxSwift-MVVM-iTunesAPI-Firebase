@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="RxSwift_MVVM_iTunesAPI" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="kNq-Ka-7O5" id="5wa-gW-U1t"/>
+                <outlet property="nameTextField" destination="vL3-VD-EFM" id="aaZ-Wa-1UA"/>
+                <outlet property="passwordTextField" destination="NDA-vV-J7k" id="OFo-E9-FCc"/>
+                <outlet property="signUpButton" destination="aqx-ly-tkg" id="7X9-7K-0G4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,9 +21,47 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="fWU-xB-X9X">
+                    <rect key="frame" x="57" y="80" width="300" height="174"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名前" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vL3-VD-EFM">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNq-Ka-7O5">
+                            <rect key="frame" x="0.0" y="70" width="300" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NDA-vV-J7k">
+                            <rect key="frame" x="0.0" y="140" width="300" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="pFL-QV-K8a"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqx-ly-tkg">
+                    <rect key="frame" x="137" y="303" width="141" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="決定"/>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="139" y="91"/>
+            <constraints>
+                <constraint firstItem="fWU-xB-X9X" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="36" id="0iL-qv-KGo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fWU-xB-X9X" secondAttribute="trailing" constant="57" id="8zY-UF-acg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aqx-ly-tkg" secondAttribute="trailing" constant="136" id="LiV-0E-sDM"/>
+                <constraint firstItem="aqx-ly-tkg" firstAttribute="top" secondItem="fWU-xB-X9X" secondAttribute="bottom" constant="49" id="SPy-Vc-7YB"/>
+                <constraint firstItem="fWU-xB-X9X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="57" id="ZLb-Y6-brQ"/>
+                <constraint firstItem="aqx-ly-tkg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="137" id="qBd-4D-om2"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="90.401785714285708"/>
         </view>
     </objects>
     <resources>
