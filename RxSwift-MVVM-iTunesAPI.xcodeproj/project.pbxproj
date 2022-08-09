@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		958431F728A1EF2100F85189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958431F628A1EF2100F85189 /* AppDelegate.swift */; };
+		958431F928A1EF2100F85189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958431F828A1EF2100F85189 /* SceneDelegate.swift */; };
+		9584320028A1EF2200F85189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958431FF28A1EF2200F85189 /* Assets.xcassets */; };
+		9584320328A1EF2200F85189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9584320128A1EF2200F85189 /* LaunchScreen.storyboard */; };
+		9584320B28A1EF5200F85189 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9584320A28A1EF5200F85189 /* GoogleService-Info.plist */; };
+		9584320E28A1EFB700F85189 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9584320D28A1EFB700F85189 /* FirebaseAuth */; };
+		9584321028A1EFB700F85189 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9584320F28A1EFB700F85189 /* FirebaseFirestore */; };
+		9584321228A1EFB700F85189 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9584321128A1EFB700F85189 /* FirebaseStorage */; };
+		9584321528A1EFE900F85189 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9584321428A1EFE900F85189 /* SDWebImage */; };
+		9584321828A1F23E00F85189 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584321628A1F23E00F85189 /* MainTabViewController.swift */; };
+		9584321928A1F23E00F85189 /* MainTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9584321728A1F23E00F85189 /* MainTabViewController.xib */; };
+		9584322128A1F2E900F85189 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584321F28A1F2E900F85189 /* LoginViewController.swift */; };
+		9584322228A1F2E900F85189 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9584322028A1F2E900F85189 /* LoginViewController.xib */; };
+		9584322628A1F30F00F85189 /* SearchMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584322428A1F30F00F85189 /* SearchMusicViewController.swift */; };
+		9584322728A1F30F00F85189 /* SearchMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9584322528A1F30F00F85189 /* SearchMusicViewController.xib */; };
+		9584322B28A1F34A00F85189 /* MyFavoriteMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584322928A1F34A00F85189 /* MyFavoriteMusicViewController.swift */; };
+		9584322C28A1F34A00F85189 /* MyFavoriteMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9584322A28A1F34A00F85189 /* MyFavoriteMusicViewController.xib */; };
+		9584323028A1F37E00F85189 /* FavoriteMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584322E28A1F37E00F85189 /* FavoriteMusicListViewController.swift */; };
+		9584323128A1F37E00F85189 /* FavoriteMusicListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9584322F28A1F37E00F85189 /* FavoriteMusicListViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		958431F328A1EF2100F85189 /* RxSwift-MVVM-iTunesAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-MVVM-iTunesAPI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		958431F628A1EF2100F85189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		958431F828A1EF2100F85189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		958431FF28A1EF2200F85189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9584320228A1EF2200F85189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9584320428A1EF2200F85189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9584320A28A1EF5200F85189 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9584321628A1F23E00F85189 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		9584321728A1F23E00F85189 /* MainTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabViewController.xib; sourceTree = "<group>"; };
+		9584321F28A1F2E900F85189 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9584322028A1F2E900F85189 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		9584322428A1F30F00F85189 /* SearchMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewController.swift; sourceTree = "<group>"; };
+		9584322528A1F30F00F85189 /* SearchMusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchMusicViewController.xib; sourceTree = "<group>"; };
+		9584322928A1F34A00F85189 /* MyFavoriteMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteMusicViewController.swift; sourceTree = "<group>"; };
+		9584322A28A1F34A00F85189 /* MyFavoriteMusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFavoriteMusicViewController.xib; sourceTree = "<group>"; };
+		9584322E28A1F37E00F85189 /* FavoriteMusicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMusicListViewController.swift; sourceTree = "<group>"; };
+		9584322F28A1F37E00F85189 /* FavoriteMusicListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteMusicListViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		958431F028A1EF2100F85189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9584320E28A1EFB700F85189 /* FirebaseAuth in Frameworks */,
+				9584321028A1EFB700F85189 /* FirebaseFirestore in Frameworks */,
+				9584321528A1EFE900F85189 /* SDWebImage in Frameworks */,
+				9584321228A1EFB700F85189 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		958431EA28A1EF2100F85189 = {
+			isa = PBXGroup;
+			children = (
+				958431F528A1EF2100F85189 /* RxSwift-MVVM-iTunesAPI */,
+				958431F428A1EF2100F85189 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		958431F428A1EF2100F85189 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				958431F328A1EF2100F85189 /* RxSwift-MVVM-iTunesAPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		958431F528A1EF2100F85189 /* RxSwift-MVVM-iTunesAPI */ = {
+			isa = PBXGroup;
+			children = (
+				9584321C28A1F24F00F85189 /* Model */,
+				9584321B28A1F24B00F85189 /* View */,
+				9584321A28A1F24300F85189 /* ViewModel */,
+				958431F628A1EF2100F85189 /* AppDelegate.swift */,
+				958431F828A1EF2100F85189 /* SceneDelegate.swift */,
+				958431FF28A1EF2200F85189 /* Assets.xcassets */,
+				9584320128A1EF2200F85189 /* LaunchScreen.storyboard */,
+				9584320428A1EF2200F85189 /* Info.plist */,
+				9584320A28A1EF5200F85189 /* GoogleService-Info.plist */,
+			);
+			path = "RxSwift-MVVM-iTunesAPI";
+			sourceTree = "<group>";
+		};
+		9584321A28A1F24300F85189 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9584321B28A1F24B00F85189 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9584322D28A1F35D00F85189 /* FavoriteMusicListViewController */,
+				9584322828A1F31900F85189 /* MyFavoriteMusic */,
+				9584322328A1F2F000F85189 /* SearchMusic */,
+				9584321E28A1F2B800F85189 /* Login */,
+				9584321D28A1F2AC00F85189 /* MainTab */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9584321C28A1F24F00F85189 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9584321D28A1F2AC00F85189 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				9584321628A1F23E00F85189 /* MainTabViewController.swift */,
+				9584321728A1F23E00F85189 /* MainTabViewController.xib */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		9584321E28A1F2B800F85189 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9584321F28A1F2E900F85189 /* LoginViewController.swift */,
+				9584322028A1F2E900F85189 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9584322328A1F2F000F85189 /* SearchMusic */ = {
+			isa = PBXGroup;
+			children = (
+				9584322428A1F30F00F85189 /* SearchMusicViewController.swift */,
+				9584322528A1F30F00F85189 /* SearchMusicViewController.xib */,
+			);
+			path = SearchMusic;
+			sourceTree = "<group>";
+		};
+		9584322828A1F31900F85189 /* MyFavoriteMusic */ = {
+			isa = PBXGroup;
+			children = (
+				9584322928A1F34A00F85189 /* MyFavoriteMusicViewController.swift */,
+				9584322A28A1F34A00F85189 /* MyFavoriteMusicViewController.xib */,
+			);
+			path = MyFavoriteMusic;
+			sourceTree = "<group>";
+		};
+		9584322D28A1F35D00F85189 /* FavoriteMusicListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9584322E28A1F37E00F85189 /* FavoriteMusicListViewController.swift */,
+				9584322F28A1F37E00F85189 /* FavoriteMusicListViewController.xib */,
+			);
+			path = FavoriteMusicListViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		958431F228A1EF2100F85189 /* RxSwift-MVVM-iTunesAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9584320728A1EF2200F85189 /* Build configuration list for PBXNativeTarget "RxSwift-MVVM-iTunesAPI" */;
+			buildPhases = (
+				958431EF28A1EF2100F85189 /* Sources */,
+				958431F028A1EF2100F85189 /* Frameworks */,
+				958431F128A1EF2100F85189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RxSwift-MVVM-iTunesAPI";
+			packageProductDependencies = (
+				9584320D28A1EFB700F85189 /* FirebaseAuth */,
+				9584320F28A1EFB700F85189 /* FirebaseFirestore */,
+				9584321128A1EFB700F85189 /* FirebaseStorage */,
+				9584321428A1EFE900F85189 /* SDWebImage */,
+			);
+			productName = "RxSwift-MVVM-iTunesAPI";
+			productReference = 958431F328A1EF2100F85189 /* RxSwift-MVVM-iTunesAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		958431EB28A1EF2100F85189 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					958431F228A1EF2100F85189 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 958431EE28A1EF2100F85189 /* Build configuration list for PBXProject "RxSwift-MVVM-iTunesAPI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 958431EA28A1EF2100F85189;
+			packageReferences = (
+				9584320C28A1EFB700F85189 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9584321328A1EFE900F85189 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = 958431F428A1EF2100F85189 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				958431F228A1EF2100F85189 /* RxSwift-MVVM-iTunesAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		958431F128A1EF2100F85189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9584323128A1F37E00F85189 /* FavoriteMusicListViewController.xib in Resources */,
+				9584322228A1F2E900F85189 /* LoginViewController.xib in Resources */,
+				9584320328A1EF2200F85189 /* LaunchScreen.storyboard in Resources */,
+				9584321928A1F23E00F85189 /* MainTabViewController.xib in Resources */,
+				9584322C28A1F34A00F85189 /* MyFavoriteMusicViewController.xib in Resources */,
+				9584320B28A1EF5200F85189 /* GoogleService-Info.plist in Resources */,
+				9584322728A1F30F00F85189 /* SearchMusicViewController.xib in Resources */,
+				9584320028A1EF2200F85189 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		958431EF28A1EF2100F85189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9584322B28A1F34A00F85189 /* MyFavoriteMusicViewController.swift in Sources */,
+				9584322128A1F2E900F85189 /* LoginViewController.swift in Sources */,
+				9584322628A1F30F00F85189 /* SearchMusicViewController.swift in Sources */,
+				958431F728A1EF2100F85189 /* AppDelegate.swift in Sources */,
+				9584323028A1F37E00F85189 /* FavoriteMusicListViewController.swift in Sources */,
+				958431F928A1EF2100F85189 /* SceneDelegate.swift in Sources */,
+				9584321828A1F23E00F85189 /* MainTabViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9584320128A1EF2200F85189 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9584320228A1EF2200F85189 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9584320528A1EF2200F85189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9584320628A1EF2200F85189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9584320828A1EF2200F85189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7X9S244452;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RxSwift-MVVM-iTunesAPI/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mkondo.RxSwift-MVVM-iTunesAPI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9584320928A1EF2200F85189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7X9S244452;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RxSwift-MVVM-iTunesAPI/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mkondo.RxSwift-MVVM-iTunesAPI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		958431EE28A1EF2100F85189 /* Build configuration list for PBXProject "RxSwift-MVVM-iTunesAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9584320528A1EF2200F85189 /* Debug */,
+				9584320628A1EF2200F85189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9584320728A1EF2200F85189 /* Build configuration list for PBXNativeTarget "RxSwift-MVVM-iTunesAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9584320828A1EF2200F85189 /* Debug */,
+				9584320928A1EF2200F85189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9584320C28A1EFB700F85189 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		9584321328A1EFE900F85189 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9584320D28A1EFB700F85189 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9584320C28A1EFB700F85189 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9584320F28A1EFB700F85189 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9584320C28A1EFB700F85189 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		9584321128A1EFB700F85189 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9584320C28A1EFB700F85189 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		9584321428A1EFE900F85189 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9584321328A1EFE900F85189 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 958431EB28A1EF2100F85189 /* Project object */;
+}
