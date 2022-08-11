@@ -6,24 +6,40 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class SearchMusicViewController: UIViewController {
+final class SearchMusicViewController: UIViewController {
+
+    // MARK: UI Parts
+    @IBOutlet private weak var searchTextField: UITextField!
+    @IBOutlet weak var tableView: UITableView!
+
+    let disposeBag = DisposeBag()
+
+    let searchMusicViewModel = SearchMusicViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupTableView()
+        setupBindings()
     }
 
+    private func setupBindings(){
+        let searchMusicViewModelInput = SearchMusicViewModelInput(searchTextFieldObservable: searchTextField.rx.text.map{$0 ?? ""}.asObservable())
+        searchMusicViewModel.setup(input: searchMusicViewModelInput)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let musicDataSource = MusicTableViewDataSource()
+        searchMusicViewModel.pushMusic
+            .bind(to: tableView.rx.items(dataSource: musicDataSource))
+            .disposed(by: disposeBag)
     }
-    */
+
+    private func setupTableView(){
+        tableView.rowHeight = 100
+        tableView.register(UINib(nibName: MusicTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: MusicTableViewCell.identifier)
+
+    }
+
 
 }

@@ -17,17 +17,21 @@ class MainTabViewController: UITabBarController {
     private func initTabBar(){
         let searchMusicVC = SearchMusicViewController()
         searchMusicVC.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
+        let searchMusicNVC = UINavigationController(rootViewController: searchMusicVC)
 
         let myFavoriteMusicVC = MyFavoriteMusicViewController()
         myFavoriteMusicVC.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
+        let myFavoriteMusicNVC = UINavigationController(rootViewController: myFavoriteMusicVC)
 
         let favoriteMusicListVC = FavoriteMusicListViewController()
         favoriteMusicListVC.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 2)
+        let favoriteMusicListNVC = UINavigationController(rootViewController: favoriteMusicListVC)
 
         let loginVC = LoginViewController()
         loginVC.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 3)
+        let loginNVC = UINavigationController(rootViewController: loginVC)
 
-        setViewControllers([searchMusicVC, myFavoriteMusicVC, favoriteMusicListVC, loginVC], animated: false)
+        setViewControllers([searchMusicNVC, myFavoriteMusicNVC, favoriteMusicListNVC, loginNVC], animated: false)
     }
 
 }

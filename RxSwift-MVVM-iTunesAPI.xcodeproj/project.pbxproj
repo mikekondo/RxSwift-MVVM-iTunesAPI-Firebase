@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		956C058E28A4CA06005D5F72 /* MusicTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C058D28A4CA06005D5F72 /* MusicTableViewDataSource.swift */; };
+		956C059028A4CA26005D5F72 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C058F28A4CA26005D5F72 /* Music.swift */; };
+		956C059328A4CD8C005D5F72 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C059128A4CD8C005D5F72 /* MusicTableViewCell.swift */; };
+		956C059428A4CD8C005D5F72 /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 956C059228A4CD8C005D5F72 /* MusicTableViewCell.xib */; };
+		956C059728A4D05B005D5F72 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 956C059628A4D05B005D5F72 /* PKHUD */; };
+		956C059928A4D27A005D5F72 /* SearchMusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C059828A4D27A005D5F72 /* SearchMusicViewModel.swift */; };
 		958431F728A1EF2100F85189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958431F628A1EF2100F85189 /* AppDelegate.swift */; };
 		958431F928A1EF2100F85189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958431F828A1EF2100F85189 /* SceneDelegate.swift */; };
 		9584320028A1EF2200F85189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958431FF28A1EF2200F85189 /* Assets.xcassets */; };
@@ -35,6 +41,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		956C058D28A4CA06005D5F72 /* MusicTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewDataSource.swift; sourceTree = "<group>"; };
+		956C058F28A4CA26005D5F72 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		956C059128A4CD8C005D5F72 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		956C059228A4CD8C005D5F72 /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
+		956C059828A4D27A005D5F72 /* SearchMusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewModel.swift; sourceTree = "<group>"; };
 		958431F328A1EF2100F85189 /* RxSwift-MVVM-iTunesAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-MVVM-iTunesAPI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		958431F628A1EF2100F85189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		958431F828A1EF2100F85189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9584326D28A2214100F85189 /* RxRelay in Frameworks */,
+				956C059728A4D05B005D5F72 /* PKHUD in Frameworks */,
 				9584320E28A1EFB700F85189 /* FirebaseAuth in Frameworks */,
 				9584321028A1EFB700F85189 /* FirebaseFirestore in Frameworks */,
 				9584326B28A2214100F85189 /* RxCocoa in Frameworks */,
@@ -111,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				9584326028A2203100F85189 /* LoginViewModel.swift */,
+				956C059828A4D27A005D5F72 /* SearchMusicViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -132,6 +145,8 @@
 			children = (
 				9584323228A1FD2500F85189 /* SendDB.swift */,
 				9584323428A1FD3100F85189 /* LoadDB.swift */,
+				956C058D28A4CA06005D5F72 /* MusicTableViewDataSource.swift */,
+				956C058F28A4CA26005D5F72 /* Music.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +174,8 @@
 			children = (
 				9584322428A1F30F00F85189 /* SearchMusicViewController.swift */,
 				9584322528A1F30F00F85189 /* SearchMusicViewController.xib */,
+				956C059128A4CD8C005D5F72 /* MusicTableViewCell.swift */,
+				956C059228A4CD8C005D5F72 /* MusicTableViewCell.xib */,
 			);
 			path = SearchMusic;
 			sourceTree = "<group>";
@@ -205,6 +222,7 @@
 				9584326A28A2214100F85189 /* RxCocoa */,
 				9584326C28A2214100F85189 /* RxRelay */,
 				9584326E28A2214100F85189 /* RxSwift */,
+				956C059628A4D05B005D5F72 /* PKHUD */,
 			);
 			productName = "RxSwift-MVVM-iTunesAPI";
 			productReference = 958431F328A1EF2100F85189 /* RxSwift-MVVM-iTunesAPI.app */;
@@ -238,6 +256,7 @@
 				9584320C28A1EFB700F85189 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				9584321328A1EFE900F85189 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				9584326928A2214100F85189 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				956C059528A4D05B005D5F72 /* XCRemoteSwiftPackageReference "PKHUD" */,
 			);
 			productRefGroup = 958431F428A1EF2100F85189 /* Products */;
 			projectDirPath = "";
@@ -256,6 +275,7 @@
 				9584323128A1F37E00F85189 /* FavoriteMusicListViewController.xib in Resources */,
 				9584322228A1F2E900F85189 /* LoginViewController.xib in Resources */,
 				9584320328A1EF2200F85189 /* LaunchScreen.storyboard in Resources */,
+				956C059428A4CD8C005D5F72 /* MusicTableViewCell.xib in Resources */,
 				9584321928A1F23E00F85189 /* MainTabViewController.xib in Resources */,
 				9584322C28A1F34A00F85189 /* MyFavoriteMusicViewController.xib in Resources */,
 				9584320B28A1EF5200F85189 /* GoogleService-Info.plist in Resources */,
@@ -271,9 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				956C058E28A4CA06005D5F72 /* MusicTableViewDataSource.swift in Sources */,
 				9584322B28A1F34A00F85189 /* MyFavoriteMusicViewController.swift in Sources */,
 				9584323528A1FD3100F85189 /* LoadDB.swift in Sources */,
 				9584322128A1F2E900F85189 /* LoginViewController.swift in Sources */,
+				956C059928A4D27A005D5F72 /* SearchMusicViewModel.swift in Sources */,
 				9584322628A1F30F00F85189 /* SearchMusicViewController.swift in Sources */,
 				958431F728A1EF2100F85189 /* AppDelegate.swift in Sources */,
 				9584323028A1F37E00F85189 /* FavoriteMusicListViewController.swift in Sources */,
@@ -281,6 +303,8 @@
 				9584321828A1F23E00F85189 /* MainTabViewController.swift in Sources */,
 				9584326128A2203100F85189 /* LoginViewModel.swift in Sources */,
 				9584323328A1FD2500F85189 /* SendDB.swift in Sources */,
+				956C059328A4CD8C005D5F72 /* MusicTableViewCell.swift in Sources */,
+				956C059028A4CA26005D5F72 /* Music.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +514,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		956C059528A4D05B005D5F72 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		9584320C28A1EFB700F85189 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -517,6 +549,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		956C059628A4D05B005D5F72 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 956C059528A4D05B005D5F72 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
 		9584320D28A1EFB700F85189 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9584320C28A1EFB700F85189 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

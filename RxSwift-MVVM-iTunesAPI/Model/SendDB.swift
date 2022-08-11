@@ -11,6 +11,7 @@ import FirebaseFirestore
 import FirebaseStorage
 
 class SendDB {
+    let db = Firestore.firestore()
     func createUserFireStore(name: String,email: String,password: String){
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             if let error = error {
@@ -18,6 +19,23 @@ class SendDB {
             }
             print("アカウント作成成功")
             // Firestoreにユーザ情報を送る
+            guard let uuid = Auth.auth().currentUser?.uid else { return }
+            
+            let document = [
+                "userName": name,
+                "email": email,
+                "password": password,
+                "uuid": uuid,
+                "createAt": Timestamp(),
+                "updateAt": Timestamp()
+            ] as [String : Any]
+
+            self.db.collection("Users").document(String(uuid)).setData(document) { error in
+                if let error = error {
+                    print("Firestoreにアカウント情報を保存できませんでした",error)
+                }
+                print("Firestoreにアカウント情報を保存しました")
+            }
         }
     }
 }

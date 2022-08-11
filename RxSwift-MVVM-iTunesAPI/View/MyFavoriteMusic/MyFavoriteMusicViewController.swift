@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyFavoriteMusicViewController: UIViewController {
+final class MyFavoriteMusicViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
