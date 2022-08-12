@@ -17,6 +17,9 @@
 		956C05CC28A5D2CE005D5F72 /* SelectedMusicDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 956C05CA28A5D2CE005D5F72 /* SelectedMusicDataViewController.xib */; };
 		956C05CF28A5DD82005D5F72 /* SelectedMusicDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C05CE28A5DD82005D5F72 /* SelectedMusicDataViewModel.swift */; };
 		956C05D128A5DF58005D5F72 /* MusicSendDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C05D028A5DF58005D5F72 /* MusicSendDB.swift */; };
+		956C05D328A5F5C1005D5F72 /* MyFavoriteMusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C05D228A5F5C1005D5F72 /* MyFavoriteMusicViewModel.swift */; };
+		956C061128A61930005D5F72 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C061028A61930005D5F72 /* User.swift */; };
+		956C061428A66097005D5F72 /* MusicLoadDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C061328A66097005D5F72 /* MusicLoadDB.swift */; };
 		958431F728A1EF2100F85189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958431F628A1EF2100F85189 /* AppDelegate.swift */; };
 		958431F928A1EF2100F85189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958431F828A1EF2100F85189 /* SceneDelegate.swift */; };
 		9584320028A1EF2200F85189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958431FF28A1EF2200F85189 /* Assets.xcassets */; };
@@ -42,6 +45,9 @@
 		9584326B28A2214100F85189 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9584326A28A2214100F85189 /* RxCocoa */; };
 		9584326D28A2214100F85189 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 9584326C28A2214100F85189 /* RxRelay */; };
 		9584326F28A2214100F85189 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9584326E28A2214100F85189 /* RxSwift */; };
+		9587995E28A66AD50065B14B /* FavMusicTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9587995D28A66AD50065B14B /* FavMusicTableViewDataSource.swift */; };
+		9587996328A66B190065B14B /* FavMusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9587996128A66B190065B14B /* FavMusicTableViewCell.swift */; };
+		9587996428A66B190065B14B /* FavMusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9587996228A66B190065B14B /* FavMusicTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +60,9 @@
 		956C05CA28A5D2CE005D5F72 /* SelectedMusicDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedMusicDataViewController.xib; sourceTree = "<group>"; };
 		956C05CE28A5DD82005D5F72 /* SelectedMusicDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedMusicDataViewModel.swift; sourceTree = "<group>"; };
 		956C05D028A5DF58005D5F72 /* MusicSendDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSendDB.swift; sourceTree = "<group>"; };
+		956C05D228A5F5C1005D5F72 /* MyFavoriteMusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteMusicViewModel.swift; sourceTree = "<group>"; };
+		956C061028A61930005D5F72 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		956C061328A66097005D5F72 /* MusicLoadDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicLoadDB.swift; sourceTree = "<group>"; };
 		958431F328A1EF2100F85189 /* RxSwift-MVVM-iTunesAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-MVVM-iTunesAPI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		958431F628A1EF2100F85189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		958431F828A1EF2100F85189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +83,9 @@
 		9584323228A1FD2500F85189 /* UserSendDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSendDB.swift; sourceTree = "<group>"; };
 		9584323428A1FD3100F85189 /* UserLoadDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoadDB.swift; sourceTree = "<group>"; };
 		9584326028A2203100F85189 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9587995D28A66AD50065B14B /* FavMusicTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavMusicTableViewDataSource.swift; sourceTree = "<group>"; };
+		9587996128A66B190065B14B /* FavMusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavMusicTableViewCell.swift; sourceTree = "<group>"; };
+		9587996228A66B190065B14B /* FavMusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavMusicTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,15 @@
 			path = SelectedMusicData;
 			sourceTree = "<group>";
 		};
+		956C061228A6239C005D5F72 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				956C058D28A4CA06005D5F72 /* MusicTableViewDataSource.swift */,
+				9587995D28A66AD50065B14B /* FavMusicTableViewDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		958431EA28A1EF2100F85189 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +144,7 @@
 		958431F528A1EF2100F85189 /* RxSwift-MVVM-iTunesAPI */ = {
 			isa = PBXGroup;
 			children = (
+				956C061228A6239C005D5F72 /* DataSource */,
 				9584321C28A1F24F00F85189 /* Model */,
 				9584321B28A1F24B00F85189 /* View */,
 				9584321A28A1F24300F85189 /* ViewModel */,
@@ -140,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				9584326028A2203100F85189 /* LoginViewModel.swift */,
+				956C05D228A5F5C1005D5F72 /* MyFavoriteMusicViewModel.swift */,
 				956C059828A4D27A005D5F72 /* SearchMusicViewModel.swift */,
 				956C05CE28A5DD82005D5F72 /* SelectedMusicDataViewModel.swift */,
 			);
@@ -164,8 +187,9 @@
 			children = (
 				9584323228A1FD2500F85189 /* UserSendDB.swift */,
 				9584323428A1FD3100F85189 /* UserLoadDB.swift */,
+				956C061028A61930005D5F72 /* User.swift */,
 				956C05D028A5DF58005D5F72 /* MusicSendDB.swift */,
-				956C058D28A4CA06005D5F72 /* MusicTableViewDataSource.swift */,
+				956C061328A66097005D5F72 /* MusicLoadDB.swift */,
 				956C058F28A4CA26005D5F72 /* Music.swift */,
 			);
 			path = Model;
@@ -205,6 +229,8 @@
 			children = (
 				9584322928A1F34A00F85189 /* MyFavoriteMusicViewController.swift */,
 				9584322A28A1F34A00F85189 /* MyFavoriteMusicViewController.xib */,
+				9587996128A66B190065B14B /* FavMusicTableViewCell.swift */,
+				9587996228A66B190065B14B /* FavMusicTableViewCell.xib */,
 			);
 			path = MyFavoriteMusic;
 			sourceTree = "<group>";
@@ -298,6 +324,7 @@
 				956C059428A4CD8C005D5F72 /* MusicTableViewCell.xib in Resources */,
 				9584321928A1F23E00F85189 /* MainTabViewController.xib in Resources */,
 				9584322C28A1F34A00F85189 /* MyFavoriteMusicViewController.xib in Resources */,
+				9587996428A66B190065B14B /* FavMusicTableViewCell.xib in Resources */,
 				956C05CC28A5D2CE005D5F72 /* SelectedMusicDataViewController.xib in Resources */,
 				9584320B28A1EF5200F85189 /* GoogleService-Info.plist in Resources */,
 				9584322728A1F30F00F85189 /* SearchMusicViewController.xib in Resources */,
@@ -320,8 +347,11 @@
 				9584322628A1F30F00F85189 /* SearchMusicViewController.swift in Sources */,
 				956C05CF28A5DD82005D5F72 /* SelectedMusicDataViewModel.swift in Sources */,
 				958431F728A1EF2100F85189 /* AppDelegate.swift in Sources */,
+				956C05D328A5F5C1005D5F72 /* MyFavoriteMusicViewModel.swift in Sources */,
 				9584323028A1F37E00F85189 /* FavoriteMusicListViewController.swift in Sources */,
 				956C05CB28A5D2CE005D5F72 /* SelectedMusicDataViewController.swift in Sources */,
+				9587995E28A66AD50065B14B /* FavMusicTableViewDataSource.swift in Sources */,
+				956C061428A66097005D5F72 /* MusicLoadDB.swift in Sources */,
 				958431F928A1EF2100F85189 /* SceneDelegate.swift in Sources */,
 				9584321828A1F23E00F85189 /* MainTabViewController.swift in Sources */,
 				956C05D128A5DF58005D5F72 /* MusicSendDB.swift in Sources */,
@@ -329,6 +359,8 @@
 				9584323328A1FD2500F85189 /* UserSendDB.swift in Sources */,
 				956C059328A4CD8C005D5F72 /* MusicTableViewCell.swift in Sources */,
 				956C059028A4CA26005D5F72 /* Music.swift in Sources */,
+				956C061128A61930005D5F72 /* User.swift in Sources */,
+				9587996328A66B190065B14B /* FavMusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

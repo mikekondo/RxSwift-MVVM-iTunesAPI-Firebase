@@ -6,24 +6,39 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 final class MyFavoriteMusicViewController: UIViewController {
+    @IBOutlet private weak var displayLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+
+    let myFavoriteMusicViewModel = MyFavoriteMusicViewModel()
+    let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupTableView()
+        setupBindings()
     }
 
+    private func setupBindings(){
+        myFavoriteMusicViewModel.setup()
 
-    /*
-    // MARK: - Navigation
+        let favMusicDataSource = FavMusicTableViewDataSource()
+        myFavoriteMusicViewModel.favMusicPushSubject
+            .bind(to: tableView.rx.items(dataSource: favMusicDataSource))
+            .disposed(by: disposeBag)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        myFavoriteMusicViewModel.userSubject.subscribe(onNext: {[weak self] user in
+            self?.displayLabel.text = "\(user.userName)さんのお気に入り"
+        })
+        .disposed(by: disposeBag)
     }
-    */
+
+    private func setupTableView(){
+        tableView.rowHeight = 100
+        tableView.register(UINib(nibName: FavMusicTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: FavMusicTableViewCell.identifier)
+    }
 
 }

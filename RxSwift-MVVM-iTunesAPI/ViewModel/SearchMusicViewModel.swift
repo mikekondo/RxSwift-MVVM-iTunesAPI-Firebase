@@ -40,6 +40,10 @@ final class SearchMusicViewModel: SearchMusicViewModelOutput{
     }
 
     func fetchSelectedMusic(index: Int) -> Song{
-        songs[index]
+        // artworkの解像度アップ
+        if let range = songs[index].artworkUrl100.range(of: "100x100bb"){
+            songs[index].artworkUrl100.replaceSubrange(range, with: "2000x2000bb")
+        }
+        return songs[index]
     }
 }
