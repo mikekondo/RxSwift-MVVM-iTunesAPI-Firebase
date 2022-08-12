@@ -24,15 +24,22 @@ final class SearchMusicViewModel: SearchMusicViewModelOutput{
 
     private var music = Music()
 
+    private (set) var songs: [Song] = []
+
     let disposeBag = DisposeBag()
 
     func setup(input: SearchMusicViewModelInput){
         input.searchTextFieldObservable.subscribe(onNext: {[weak self] text in
             guard let url = URL(string: "https://itunes.apple.com/search?term=\(text)&entity=song&contry=jp") else { return }
             self?.music.fetchMusicData(url: url) { songs in
+                self?.songs = songs
                 self?.pushMusic.accept(songs)
             }
         })
         .disposed(by: disposeBag)
+    }
+
+    func fetchSelectedMusic(index: Int) -> Song{
+        songs[index]
     }
 }

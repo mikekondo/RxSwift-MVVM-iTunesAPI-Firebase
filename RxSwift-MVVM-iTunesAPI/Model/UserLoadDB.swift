@@ -10,6 +10,6 @@ import FirebaseAuth
 import FirebaseFirestore
 import FirebaseStorage
 
-class LoadDB {
+class UserLoadDB {
 
 }

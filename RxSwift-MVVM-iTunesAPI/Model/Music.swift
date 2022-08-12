@@ -15,6 +15,7 @@ struct Song: Codable{
     let artistName: String
     let trackName: String
     let artworkUrl100: String
+    let releaseDate: String
 }
 
 class Music{

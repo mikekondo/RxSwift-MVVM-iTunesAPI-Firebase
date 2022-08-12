@@ -25,7 +25,7 @@ class LoginViewModel{
     // MARK: Output
     let isEnableButtonObservable = PublishSubject<Bool>()
 
-    let sendDB = SendDB()
+    let sendDB = UserSendDB()
     let disposeBag = DisposeBag()
 
     func setup(input: LoginViewModelInput){
@@ -60,7 +60,7 @@ class LoginViewModel{
         // ボタンを押した時にアカウント作成を行う
         input.signUpButtonObservable.subscribe (onNext: { [weak self] in
             combine.subscribe (onNext: { name,email,password in
-                self?.sendDB.createUserFireStore(name: name, email: email, password: password)
+                self?.sendDB.createUserToFireStore(name: name, email: email, password: password)
             })
         })
         .disposed(by: disposeBag)

@@ -10,9 +10,9 @@ import FirebaseAuth
 import FirebaseFirestore
 import FirebaseStorage
 
-class SendDB {
+class UserSendDB {
     let db = Firestore.firestore()
-    func createUserFireStore(name: String,email: String,password: String){
+    func createUserToFireStore(name: String,email: String,password: String){
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             if let error = error {
                 print("アカウント作成のエラー",error)

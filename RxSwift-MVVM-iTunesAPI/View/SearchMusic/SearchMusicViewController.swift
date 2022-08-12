@@ -39,6 +39,16 @@ final class SearchMusicViewController: UIViewController {
         tableView.rowHeight = 100
         tableView.register(UINib(nibName: MusicTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: MusicTableViewCell.identifier)
 
+        // セルの選択時にSelectedMusicDataVCに遷移
+        tableView.rx.itemSelected.subscribe(onNext: {[weak self] indexPath in
+            guard let selectedMusic = self?.searchMusicViewModel.fetchSelectedMusic(index: indexPath.row) else { return }
+            let selectedMusicDataViewController = SelectedMusicDataViewController()
+            selectedMusicDataViewController.selectedMusic = selectedMusic
+            self?.navigationController?.pushViewController(selectedMusicDataViewController, animated: true)
+
+        })
+        .disposed(by: disposeBag)
+
     }
 
 
