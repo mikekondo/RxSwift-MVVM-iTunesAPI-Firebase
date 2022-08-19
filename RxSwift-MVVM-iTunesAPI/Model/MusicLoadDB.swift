@@ -12,7 +12,7 @@ import FirebaseFirestore
 class MusicLoadDB {
     func fetchFavMusicFromFirestore(completion: @escaping([Song]) -> ()){
         guard let uid = Auth.auth().currentUser?.uid else { return }
-        Firestore.firestore().collection("Songs").order(by: "updateAt",descending: true).whereField("uid", isEqualTo: "\(uid)").addSnapshotListener { snapShot, error in
+        Firestore.firestore().collection("Songs").whereField("uid", isEqualTo: "\(uid)").getDocuments { snapShot, error in
             if let error = error {
                 print("Firestore、お気に入り楽曲の取得、失敗",error)
             }
